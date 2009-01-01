@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="Resource Name">
+	
+	<!--Update Name -->
+	<bannerLeft>
+		<name>Resource Name</name>
+	</bannerLeft>
+  	
+  	<body>
+      
+      <!--Update Links -->	
+      <links>
+      		<item name="NetKernel" href="http://1060.org/"/>
+    	</links>
+      
+      <!--Add or remove items from the main menu -->
+    	<menu name="Overview">
+      		<item name="Introduction"				href="index.html"/>
+      		<item name="Deployment"					href="deployment.html"/>
+    	</menu>
+    
+    <!--Default Maven Menus -->	
+		<menu ref="modules"/>
+		<menu ref="parents"/>
+		<menu ref="reports"/>
+	</body>
+</project>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+    
+    <!--Update Identity -->
+    <identity>
+		<uri>urn:org:foo:demo:HelloResource</uri>
+		<version>1.0.0</version>
+    </identity>
+	
+	<!--Update Resource Name -->
+	<info>
+		<name>Hello Resource</name>
+        <description>Description of Resource</description>
+		<type>application</type>
+    </info>
+    
+    <publisher>
+        <name>NetKernel</name>
+		<uri>http://www.1060.org/</uri>
+    </publisher>
+    
+    <licence>
+		<name>1060 Public License v1.0</name>
+		<uri>http://www.1060research.com/license</uri>
+	</licence>
+	
+	<!--Update Public Address Space -->
+	<export>
+		<uri>
+			<match>ffcpl:/hello-resource.*</match>
+			<match>ffcpl:/etc/LogConfig.xml</match>
+			<match>ffcpl:/pub/cross.png</match>
+			<match>ffcpl:/entrypoints.xml</match>
+			<match>ffcpl:/xunit/hello-resource.*</match>
+		</uri>
+		<class/>
+	</export>
+	
+	<!-- Rewrite to test definitions -->
+	<rewrite>
+    	<rule>
+      		<match>ffcpl:/xunit/hello-resource(.*)</match>
+      		<to>active:xunit+testlist@ffcpl:/xml/xunit-definitions.xml$1</to>
+    	</rule>
+	</rewrite>
+    
+    <!--Update Private Address Space -->
+	<mapping>
+		<this>
+			<match>ffcpl:/etc/LogConfig.xml</match>
+			<match>ffcpl:/pub/cross.png</match>
+			<match>ffcpl:/xml/xunit-definitions.xml</match>
+			<match>ffcpl:/entrypoints.xml</match>
+		</this>
+		<ura>
+		  <match>ffcpl:/hello-resource.*</match>
+		  <class>org.foo.demo.HelloResourceAccessor</class>
+		</ura>	
+		<import>
+			<uri>urn:org:ten60:netkernel:ext:layer1</uri>
+		</import>
+		<import>
+			<uri>urn:org:ten60:netkernel:ext:xml:core</uri>
+		</import>
+		<import>
+			<uri>urn:org:ten60:netkernel:ext:xml:ura</uri>
+		</import>
+		<import>
+			<uri>urn:org:ten60:netkernel:ext:sys</uri>
+		</import>
+		<import>
+			<uri>urn:org:ten60:netkernel:ext:dpml</uri>
+		</import>
+		<import>
+			<uri>urn:org:ten60:netkernel:ext:script</uri>
+		</import>
+		<import>
+			<uri>urn:org:ten60:netkernel:ext:xunit</uri>
+		</import>	
+		<super/>
+	</mapping>
+</module>

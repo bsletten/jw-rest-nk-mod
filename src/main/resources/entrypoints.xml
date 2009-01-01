@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entrypoints>
+  <entrypoint>
+    <name>icon</name>
+    <uri>ffcpl:/pub/cross.png</uri>
+    <indexable>
+      <title>Icon</title>
+      <desc></desc>
+      <keywords/>
+    </indexable>
+    <categories>img</categories>
+    <group>Entrypoints</group>
+    <icon/>
+  </entrypoint>
+	<entrypoint>
+		<name>Hello Resource XUnit Tests</name>
+		<uri>ffcpl:/xunit/hello-resource</uri>
+		<indexable>
+			<title>Hello Resource Tests</title>
+			<desc>Tests the Hello Resource API</desc>
+			<keywords/>
+		</indexable>
+		<categories>xunit</categories>
+		<group>Test</group>
+		<icon/>
+	</entrypoint>   	
+</entrypoints>
+

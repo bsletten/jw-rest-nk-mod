@@ -1,0 +1,6 @@
+<log>
+  <name>HelloResource</name>
+  <destination>log/HelloResource-%g.log</destination>
+  <limit>100000</limit>
+  <count>4</count>
+</log>

@@ -1,0 +1,12 @@
+<testlist output="xml" title="Hello Resource Tests">
+	<!-- An optional XHTML description -->
+	<desc>
+		<div>
+			<h1>XUnit Tests</h1>
+			<p>Hello Resource XUnit Definitions</p>
+		</div>
+	</desc>
+	<test>
+		<uri>ffcpl:/resource/status/all</uri>
+	</test>
+</testlist>
